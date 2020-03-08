@@ -63,6 +63,4 @@
 (popwin-mode 1)
 
 ;; 补全引号、括号之类的
-;;(require 'smartparens-config)
-;;(add-hook 'after-init-hook 'smartparens-mode)
 (smartparens-global-mode t)
