@@ -32,7 +32,10 @@
   (unless (package-installed-p package)
     (package-install package)))
 
-
+;; 补全延迟时间
+(setq-default company-idle-delay 0.7)
+;; 开始补全的最小字符
+(setq-default company-minimum-prefix-length 2)
 ;; 全局补全
 (add-hook 'after-init-hook 'global-company-mode)
 

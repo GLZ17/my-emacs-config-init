@@ -5,3 +5,6 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 ;; capture 快捷键
 (global-set-key (kbd "C-c c") 'org-capture)
+
+
+(setq-default  org-export-with-sub-superscripts nil)

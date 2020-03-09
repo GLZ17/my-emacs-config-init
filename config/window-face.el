@@ -12,9 +12,23 @@
 (global-linum-mode t)
 ;; 显示当前行
 (global-hl-line-mode t)
+;; 设置光标类型
 (setq-default cursor-type 'bar)
 
 
+;; 文字以像素单位滚动
+(pixel-scroll-mode t)
+;; 大于100后，光标不会自动居中（超出上下屏不会自动居中）
+(setq scroll-conservatively 222)
+;; 滚动时维持光标位置
+(setq scroll-preserve-screen-position t)
 
-
-
+;; 禁止鼠标滚轮滚动
+(mouse-wheel-mode -1)
+;; 隐藏滚轮时间
+(global-set-key [wheel-up] 'ignore)
+(global-set-key [wheel-down] 'ignore)
+(global-set-key [double-wheel-up] 'ignore)
+(global-set-key [double-wheel-down] 'ignore)
+(global-set-key [triple-wheel-up] 'ignore)
+(global-set-key [triple-wheel-down] 'ignore)
