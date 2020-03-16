@@ -14,6 +14,7 @@
 		       project-abbrev ;; 缩写补全
 		       htmlize ;; org 导出 html
 		       hungry-delete ;;智能删除
+		       php-mode
 		       ;; ---之后的都有waring
 		       markdown-mode ;;避免报错
 		       rust-mode ;;报错
