@@ -8,18 +8,17 @@
 
 ;; 定义变量
 ;; 指定使用的包
-(defvar package-list '(company ;; 补全
+(defvar package-list '(
+		       company ;; 补全
 		       base16-theme ;; 主题（语法高亮）
 		       counsel ;; minibuffer 补全提示
 		       project-abbrev ;; 缩写补全
 		       htmlize ;; org 导出 html
 		       hungry-delete ;;智能删除
 		       php-mode
-		       ;; ---之后的都有waring
-		       markdown-mode ;;避免报错
-		       rust-mode ;;报错
+		       haskell-mode
 		       smartparens ;; 补全括号、引号之类的
-		       popwin ;; 新打开的辅助窗口时光标自动适应		      
+		       popwin ;; 新打开的辅助窗口时光标自动适应
 		       )) 
 ;; 设置变量方便管理包（如：使用命令可以自动删除包）
 (setq package-selected-packages package-list)
@@ -65,6 +64,9 @@
 ;; 打开窗口，光标自动匹配
 (require 'popwin)
 (popwin-mode 1)
-
 ;; 补全引号、括号之类的
 (smartparens-global-mode t)
+
+;; 不设置 interative-haskell-mode中进入ghci中会卡死（不停提示进程死亡）
+(set-language-environment 'utf-8)
+
