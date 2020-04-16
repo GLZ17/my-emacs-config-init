@@ -8,3 +8,10 @@
 
 
 (setq-default  org-export-with-sub-superscripts nil)
+
+
+;; hidden minibuffer message: indentation setup for shell type sh
+(advice-add 'sh-set-shell :around
+            (lambda (orig-fun &rest args)
+              (let ((inhibit-message t))
+                (apply orig-fun args))))
