@@ -16,6 +16,7 @@
 		       htmlize ;; org 导出 html
 		       hungry-delete ;;智能删除
 		       php-mode
+		       typescript-mode
 		       haskell-mode
 		       smartparens ;; 补全括号、引号之类的
 		       popwin ;; 新打开的辅助窗口时光标自动适应
