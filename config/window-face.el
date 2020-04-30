@@ -8,10 +8,13 @@
 (setq-default inhibit-startup-screen t)
 ;; 高亮匹配的括号
 (show-paren-mode t)
+;; 行号右对齐
+(setq display-line-numbers-width-start t)
 ;; 显示行号
-(global-linum-mode t)
+(when (version<= "26.0.50" emacs-version )
+  (global-display-line-numbers-mode))
 ;; 显示当前行
-(global-hl-line-mode t)
+;;(global-hl-line-mode t)
 ;; 设置光标类型
 (setq-default cursor-type 'bar)
 
