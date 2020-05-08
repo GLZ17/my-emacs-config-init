@@ -10,7 +10,8 @@
 ;; 指定使用的包
 (defvar package-list '(
 		       company ;; 补全
-		       base16-theme ;; 主题（语法高亮）
+		       ;;base16-theme ;; 主题（语法高亮）
+		       zenburn-theme
 		       counsel ;; minibuffer 补全提示
 		       ;;project-abbrev ;; 缩写补全
 		       htmlize ;; org 导出 html
@@ -41,7 +42,8 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
 ;; 设置主题
-(load-theme 'base16-default-dark t)
+;;(load-theme 'base16-default-dark t)
+(load-theme 'zenburn t)
 
 ;; 使minibuffer 可读性变得很强，搜索也很爽
 ;; enable this if you want `swiper' to use it

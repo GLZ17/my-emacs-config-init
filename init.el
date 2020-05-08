@@ -23,8 +23,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-;; '(hl-line ((t (:background "#586F3E" :foreground "#dddddd"))))
- '(region ((t (:background "#863434" :foreground "#cccccc")))))
+ ;; '(hl-line ((t (:background "#586F3E" :foreground "#dddddd"))))
+ ;; '(region ((t (:background "#863434" :foreground "#cccccc"))))
+ '(hl-line ((t (:background "#2b2b2b"))))
+ '(region ((t (:background "#214283"))))
+ )
 
 
 
@@ -82,7 +85,8 @@
 ;; 指定使用的包
 (defvar package-list '(
 		       company ;; 补全
-		       base16-theme ;; 主题（语法高亮）
+		       ;;base16-theme ;; 主题（语法高亮）
+		       zenburn-theme
 		       counsel ;; minibuffer 补全提示
 		       ;;project-abbrev ;; 缩写补全
 		       htmlize ;; org 导出 html
@@ -113,7 +117,8 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
 ;; 设置主题
-(load-theme 'base16-default-dark t)
+;;(load-theme 'base16-default-dark t)
+(load-theme 'zenburn t)
 
 ;; 使minibuffer 可读性变得很强，搜索也很爽
 ;; enable this if you want `swiper' to use it
@@ -169,6 +174,8 @@
 (show-paren-mode t)
 ;; 行号右对齐
 (setq display-line-numbers-width-start t)
+;; 光标所在行高亮
+(global-hl-line-mode 1)
 ;; 显示行号
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode))

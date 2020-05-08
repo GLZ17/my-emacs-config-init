@@ -15,8 +15,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-;; '(hl-line ((t (:background "#586F3E" :foreground "#dddddd"))))
- '(region ((t (:background "#863434" :foreground "#cccccc")))))
+ ;; '(hl-line ((t (:background "#586F3E" :foreground "#dddddd"))))
+ ;; '(region ((t (:background "#863434" :foreground "#cccccc"))))
+ '(hl-line ((t (:background "#2b2b2b"))))
+ '(region ((t (:background "#214283"))))
+ )
 
 
 

@@ -10,6 +10,8 @@
 (show-paren-mode t)
 ;; 行号右对齐
 (setq display-line-numbers-width-start t)
+;; 光标所在行高亮
+(global-hl-line-mode 1)
 ;; 显示行号
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode))
