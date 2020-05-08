@@ -38,6 +38,7 @@ class Emacs {
     joinFiles(glue = '\n\n') {
         this.string = this.file_stream
             .map(it => it.toString())
+            .map(it=>it.replace(/[\r]/g, ''))
             .join(glue)
         return this;
     }
