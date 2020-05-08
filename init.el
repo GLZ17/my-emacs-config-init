@@ -7,7 +7,6 @@
 
 
 
-
 ;; M-x customize-group Return 输入某一个类别可以设置对应的种类
 ;; 如：rigion 设置激活区域，hl-line 设置当前行高亮
 (custom-set-variables
@@ -26,7 +25,6 @@
  ;; If there is more than one, they won't work right.
 ;; '(hl-line ((t (:background "#586F3E" :foreground "#dddddd"))))
  '(region ((t (:background "#863434" :foreground "#cccccc")))))
-
 
 
 
@@ -53,7 +51,6 @@
 
 
 
-
 (setq org-default-notes-file "~/.emacs.d/notes.org")
 (setq org-agenda-files "~/.emacs.d/agenda")
 
@@ -71,7 +68,6 @@
             (lambda (orig-fun &rest args)
               (let ((inhibit-message t))
                 (apply orig-fun args))))
-
 
 
 ;; 添加源（用于包的安装）
@@ -149,7 +145,6 @@
 
 
 
-
 ;; 开启最近打开文件的记录功能
 (recentf-mode t)
 (global-set-key (kbd "C-x C-r") 'recentf-open-files)
@@ -159,7 +154,6 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 (global-set-key (kbd "<f2>") 'open-init-file)
-
 
 
 
