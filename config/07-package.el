@@ -35,7 +35,7 @@
     (package-install package)))
 
 ;; 补全延迟时间
-(setq-default company-idle-delay 0.7)
+(setq-default company-idle-delay 0.5)
 ;; 开始补全的最小字符
 (setq-default company-minimum-prefix-length 2)
 ;; 全局补全
@@ -72,4 +72,3 @@
 
 ;; 不设置 interative-haskell-mode中进入ghci中会卡死（不停提示进程死亡）
 (set-language-environment 'utf-8)
-
