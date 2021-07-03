@@ -50,12 +50,17 @@ Minor mode to enable hungry deletion.  This will delete all
 whitespace after or before point when the deletion command is
 executed.
 
+If called interactively, enable Hungry-Delete mode if ARG is
+positive, and disable it if ARG is zero or negative.  If called
+from Lisp, also enable the mode if ARG is omitted or nil, and
+toggle it if ARG is `toggle'; disable the mode otherwise.
+
 \(fn &optional ARG)" t nil)
 
 (autoload 'turn-on-hungry-delete-mode "hungry-delete" "\
-Turn on hungry delete mode if the buffer is appropriate.
+Turn on hungry delete mode if the buffer is appropriate." t nil)
 
-\(fn)" t nil)
+(put 'global-hungry-delete-mode 'globalized-minor-mode t)
 
 (defvar global-hungry-delete-mode nil "\
 Non-nil if Global Hungry-Delete mode is enabled.
