@@ -78,19 +78,22 @@
                 (apply orig-fun args))))
 
 ;; 运行代码
-(org-babel-do-load-languages
-      'org-babel-load-languages
-      '((emacs-lisp . t)
-        (C . t)
-        (java . t)
-        (js . t)
-        (ruby . t)
-        (ditaa . t)
-        (python . t)
-        (shell . t)
-        (latex . t)
-        (plantuml . t)
-        (R . t)))
+;; (org-babel-do-load-languages
+;;       'org-babel-load-languages
+;;       '((emacs-lisp . t)
+;;         (C . t)
+;;         (java . t)
+;;         (js . t)
+;;         (ruby . t)
+;;         (ditaa . t)
+;;         (python . t)
+;;         (shell . t)
+;;         (latex . t)
+;;         (plantuml . t)
+;;         (R . t)))
+
+;; enalbe <s TAB completion emacs v27.2
+(require 'org-tempo)
 
 
 ;; 开启最近打开文件的记录功能
