@@ -155,7 +155,7 @@
 		       ;;base16-theme ;; 主题（语法高亮）
 		       zenburn-theme
 		       counsel ;; minibuffer 补全提示
-		       ;;project-abbrev ;; 缩写补全
+		       project-abbrev ;; 缩写补全
 		       htmlize ;; org 导出 html
 		       hungry-delete ;;智能删除
 		       php-mode
@@ -203,8 +203,8 @@
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
 
 ;; 配置缩写补全，默认的补全文件会影响自定义配置文件的加载（会失效）
-;;(setq project-abbrev-config-file "~/.emacs.d/project-abbrev.config")
-;;(global-set-key (kbd "<tab>") 'project-abbrev-complete-word)
+(setq project-abbrev-config-file "~/.emacs.d/project-abbrev.config")
+(global-set-key (kbd "<tab>") 'project-abbrev-complete-word)
 
 ;; 打开窗口，光标自动匹配
 (require 'popwin)
